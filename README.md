@@ -40,3 +40,8 @@ $ docker run -d --name [my-app-name] -v [my-app-path]:/app -p [my-local-port]:80
 ```
 
 For production environments, you may also want to make good use of [Docker restart policies] with the last command above.
+
+[Node]: <https://nodejs.org>
+[Alpine Linux]: <https://alpinelinux.org>
+[Nginx Proxy]: <https://hub.docker.com/r/jwilder/nginx-proxy>
+[Docker restart policies]: <https://docs.docker.com/engine/reference/run/#restart-policies-restart>
