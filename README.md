@@ -1,8 +1,10 @@
 # Alnode
 
+![](https://images.microbadger.com/badges/image/kaerimichi/alnode.svg)
+
 Alnode is a lightweight Docker image for building [Node] applications based on [Alpine Linux] (edge).
 
-### What is Apline Linux
+### What is Alpine Linux
 
 Alpine Linux is a Linux distribution built around musl libc and BusyBox. The image is only 5 MB in size and has access to a package repository that is much more complete than other BusyBox based images. This makes Alpine Linux a great image base for utilities and even production applications.
 
