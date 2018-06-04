@@ -22,24 +22,7 @@ Or pull it from Docker Hub:
 $ docker pull kaerimichi/alnode
 ```
 
-Your project should be ready to launch with `npm start`. All you have to do is to run a container:
-
-```sh
-$ docker run -it --rm --name my-app alnode
-```
-
-The application should start attached to the terminal. But in a more real-life scenario, you can use the commands below to:
-
-- Get the latest image version from Docker Hub
-- Run a new container as a daemon
-- Map the application directory
-- Map the local port
-- Set up a virtual host (to use with a [Nginx Proxy], for example)
-
-```sh
-$ docker pull kaerimichi/alnode
-$ docker run -d --name [my-app-name] -v [my-app-path]:/app -p [my-local-port]:80 -v VIRTUAL_HOST='my-app-domain.com' kaerimichi/alnode
-```
+Your application should have an entrypoint command/script.
 
 For production environments, you may also want to make good use of [Docker restart policies] with the last command above.
 
